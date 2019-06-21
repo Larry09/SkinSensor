@@ -1,102 +1,12 @@
 # Application Description 
 SkinSensor is an android application designed to aid dermatologists/doctors and patients to physically mon- itor the development of a skin disorder/condition on a human body. This application would help the user to monitor the pre-existing condition.
 
-# ClickableAreasImages
-An android library that lets you define rectangular clickable areas in your images.
-
-Description of ClickableAreasImages
+Project Aims
 ===========
 
-ClickableAreasImages is an android library that lets you define rectangular clickable areas in your images and associate different objects to it. The images are zoomable and orientation changes are also handled.
+The aim of this project is to produce a unique and improved application with the feature of taking a picture or collection of pictures of the user’s skin through an intuitive and highly graphical interface, so that the user would be able to monitor their own skin-conditions, disorders, allergies and so on. One of the key aspects of the project is the use of camera for different purposes, which would enhance the functionality of this application.
+The main objective is to give patients the capability to monitor their own conditions in a consistent way using images that have been self-captured using their smartphones. An additional magnifier can be attached in case the user desires to increase they’re zooming capabilities of the camera otherwise normal zooming is pre-given. When a preview of the image is collected by the user, they would have the capability to calibrate and edit the picture to re-define its definitions and the layers affecting the area of that specific picture to fully maximise the focus of the disorder.
+The device must work coherently to monitor the user’s existing skin-condition, as well as to be able to investigate new appearances of skin features. By doing so, the collected metadata can be added by the user to register their history and to progressively view the results and act accordingly.
+Finally, the application itself must have an optimal graphical user interface, one that captures the user’s attention and is easy to use and manage. A main aspect that would capture the user’s attention would be the use of a human body image, where the user would be able to zoom in and select a specific part of the human body depending on their preference. By applying this user interface, SkinSensor aims to bring a new styling and innovation to use a simple skin-condition monitoring app.
 
-![demo image](https://raw.githubusercontent.com/Lukle/ClickableAreasImages/master/images/demo_image.png "Demo Image")
-
-Sample Application
-==================
-
-I created a sample application.
-
-[![get it on Google Play](https://raw.githubusercontent.com/Lukle/ClickableAreasImages/master/images/google-play-badge.png)](https://play.google.com/store/apps/details?id=at.lukle.clickableareas.app)
-
-
-Sample Usage
-========
-
-```java
-    public class MainActivity extends AppCompatActivity implements OnClickableAreaClickedListener {
-
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-
-            // Add image
-            ImageView image = (ImageView) findViewById(R.id.imageView);
-            image.setImageResource(R.drawable.simpsons);
-
-            // Create your image
-            ClickableAreasImage clickableAreasImage = new ClickableAreasImage(new PhotoViewAttacher(image), this);
-
-            // Initialize your clickable area list
-            List<ClickableArea> clickableAreas = new ArrayList<>();
-
-            // Define your clickable areas
-            // parameter values (pixels): (x coordinate, y coordinate, width, height) and assign an object to it
-            clickableAreas.add(new ClickableArea(500, 200, 125, 200, new Character("Homer", "Simpson")));
-        	clickableAreas.add(new ClickableArea(600, 440, 130, 160, new Character("Bart", "Simpson")));
-
-            // Set your clickable areas to the image
-            clickableAreasImage.setClickableAreas(clickableAreas);
-        }
-
-        // Listen for touches on your images:
-        @Override
-        public void onClickableAreaTouched(Object item) {
-            if (item instanceof Character) {
-                String text = ((Character) item).getFirstName() + " " + ((Character) item).getLastName();
-                Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
-            }
-        }
-    ...
-    }
-```
-
-Download
-========
-
-Add it in your root build.gradle:
-
-```gradle
-    allprojects {
-		repositories {
-			...
-			maven { url "https://jitpack.io" }
-		}
-	}
-
-    dependencies {
-	        compile 'com.github.Lukle:ClickableAreasImages:v0.1'
-	}
-```
-
-Thanks to
-=========
-
-[PhotoView](https://github.com/chrisbanes/PhotoView), which serves as foundation for this library.
-
-License
-=======
-
-    Copyright 2016, Lukas Lechner
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+  
