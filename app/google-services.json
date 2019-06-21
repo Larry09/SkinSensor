@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "119710074540",
+    "firebase_url": "https://skinsensor-a6b79.firebaseio.com",
+    "project_id": "skinsensor-a6b79",
+    "storage_bucket": "skinsensor-a6b79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119710074540:android:748bb7347bd6166a",
+        "android_client_info": {
+          "package_name": "com.example.lahirufernando.skinsensor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119710074540-0l3jlccon8jop3hhrljl2fa3m4k76aeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBojfHTbIyjC0EqR87OoTsc0MGEvo2k_Kw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

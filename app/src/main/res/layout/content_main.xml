@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home_page"
+    tools:context="com.example.lahirufernando.skinsensor.HomePage"
+    android:background="#e0e0e0">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/humanbackground"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_above="@+id/textViewBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/loginbox" />
+
+
+    <ImageView
+        android:id="@+id/humanbody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@null" />
+
+    <Button
+        android:onClick="PrevImg"
+        android:text="left"
+        android:background="@color/colorLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewBottom"
+        android:layout_toLeftOf="@+id/bodyPart"
+        android:layout_toStartOf="@+id/bodyPart" />
+
+    <Button
+        android:onClick="NextImg"
+        android:text="right"
+        android:background="@color/colorLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewBottom"
+        android:layout_toEndOf="@+id/bodyPart"
+        android:layout_toRightOf="@+id/bodyPart"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFF"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/questionBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/bodyPart"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        app:backgroundTint="#FFFF"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:id="@+id/bodyPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Select a Body Area"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+</RelativeLayout>
