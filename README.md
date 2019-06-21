@@ -1,7 +1,10 @@
+# Application Description 
+SkinSensor is an android application designed to aid dermatologists/doctors and patients to physically mon- itor the development of a skin disorder/condition on a human body. This application would help the user to monitor the pre-existing condition.
+
 # ClickableAreasImages
 An android library that lets you define rectangular clickable areas in your images.
 
-Description
+Description of ClickableAreasImages
 ===========
 
 ClickableAreasImages is an android library that lets you define rectangular clickable areas in your images and associate different objects to it. The images are zoomable and orientation changes are also handled.
