@@ -32,8 +32,8 @@ The ’image reference’, which is the rightmost icon of this page. If you woul
 
 ![image](https://user-images.githubusercontent.com/25173957/59937481-700e8000-944a-11e9-9404-6b6f058111d4.png)
 
-copyright('Copyright (c) 2017, Lahiru Fernando);
-
+Copyright (c) 2017, Lahiru Fernando
+===========
 
 
 
